@@ -1,0 +1,171 @@
+.details {
+  margin-top: 1.5rem;
+  padding: 2rem 1.5rem;
+  background: #f8fafc;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 2px 16px #e5e7eb33;
+  border: 2px solid #e5e7eb;
+  position: relative;
+}
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #6366f1;
+  background: #fff;
+  margin-bottom: 0.7rem;
+  flex-shrink: 0;
+}
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+.login {
+  color: #6366f1;
+  font-size: 1.1rem;
+  opacity: 0.95;
+  font-weight: 600;
+}
+.bio {
+  color: #475569;
+  font-size: 1.08rem;
+  opacity: 0.95;
+}
+.profileStats {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.08rem;
+  color: #6366f1;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+.extraInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2.5rem;
+  font-size: 1.01rem;
+  color: #334155;
+  opacity: 0.95;
+}
+.link {
+  color: #6366f1;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-top: 0.3rem;
+  transition: color 0.18s;
+}
+.link:hover {
+  color: #3b82f6;
+}
+.reposSection {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.reposTitle {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 0.7rem;
+}
+.repoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.repoItem {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 1px 8px #e5e7eb33;
+  border: 2px solid #e5e7eb;
+}
+.repoLink {
+  color: #6366f1;
+  font-weight: 700;
+  font-size: 1.08rem;
+  text-decoration: underline;
+}
+.repoDesc {
+  color: #64748b;
+  font-size: 1.01rem;
+  margin: 0.2rem 0 0.3rem 0;
+}
+.repoStats {
+  color: #3b82f6;
+  font-size: 1.01rem;
+  margin-top: 0.2rem;
+  font-weight: 500;
+}
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  color: #64748b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px #e5e7eb33;
+  transition: background 0.18s, color 0.18s;
+  z-index: 2;
+}
+.closeBtn:hover {
+  background: #f3f6fa;
+  color: #6366f1;
+}
+@media (max-width: 700px) {
+  .details {
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+    min-width: 0;
+    box-shadow: none;
+    margin-top: 0.5rem;
+  }
+  .cardHeader {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .headerInfo {
+    align-items: center;
+    text-align: center;
+  }
+  .extraInfo {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    font-size: 0.98rem;
+  }
+  .reposSection {
+    margin-top: 1rem;
+  }
+  .repoItem {
+    padding: 0.7rem 0.5rem;
+  }
+}

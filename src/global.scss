@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background: #f3f6fa;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+  &:hover {
+    text-decoration: underline;
+    color: #3b82f6;
+  }
+}
